@@ -34,7 +34,7 @@ const App = () => {
 
     const inputEvent = (event) => {
 
-        if(event.target.value.toLowerCase()==='prayagraj')
+        if(event.target.value.toLowerCase().trim()==='prayagraj')
         {
             setcityName("Allahabad")
         }
@@ -44,13 +44,13 @@ const App = () => {
         }
     }
 
+    var city = cityName;
 
     if(cityName==="prayagraj")
     {
         city="Allahabad";
     }
 
-    var city = cityName;
 
     const start_app = () => {
 
