@@ -9,12 +9,16 @@ import Address from "./Address";
 const Weatherinfo = (props) => {
     return (
         <>
+            <div className="weather-style1">
+            <div className="weather-style2" style={{display:props.displaytype}}>
             <Weatherimage todayweathertype={props.currweathertype} />
             <Temperature  todaytemp={props.currtemp} />
             <Weathertype todayweathertype={props.currweathertype} />
             <Line />
             <Todaydate todayday={props.currday} todaymonth={props.currmonth} todayyear={props.curryear}  todaydayname={props.currdayname}  todayhours={props.currhour} todayminutes={props.currminutes} todayseconds={props.currsecond} />
             <Address currcity={props.cityinput}/>
+            </div>
+            </div>
         </>
     )
 }

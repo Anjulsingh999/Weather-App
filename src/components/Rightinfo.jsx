@@ -12,7 +12,8 @@ import Visibility from './Visibility';
 const Rightinfo = (props) => {
     return (
         <>
-            <div className="right-container">
+            <div  style={{display:props.displaytype}} className="right-box">
+            <div className="right-container ">
                 <div className="right-inner-container">
                     <div className="group-boxes">
                         <Windspeed windtitle={"Wind"} todaywindspeed={props.currwindspeed + ' KM/h'} todaywinddirection={"Direction: " + props.currwinddirection + " º"} />
@@ -30,6 +31,7 @@ const Rightinfo = (props) => {
                     <Visibility visibilityvalue={props.currvisibility}/>
                     </div>
                 </div>
+            </div>
             </div>
         </>
     )

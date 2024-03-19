@@ -4,7 +4,7 @@ const Temperature = (props) => {
     return (
         <>
             <div className="curr-temperature">
-                {props.todaytemp}
+                {Math.round(props.todaytemp)+"ºc"}
             </div>
 
         </>

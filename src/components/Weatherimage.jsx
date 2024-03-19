@@ -5,6 +5,7 @@ import drizzleImage from '../img/drizzle.png';
 import mistImage from '../img/mist.png';
 import rainImage from '../img/rain.png';
 import snowImage from '../img/snow.png';
+import hazeImage from '../img/Haze.png'
 
 var setimg;
 
@@ -29,6 +30,10 @@ else if (weathertype === "Rain") {
 else if (weathertype === "Snow") {
     setimg=snowImage;
 }
+else if (weathertype === "Haze") {
+    setimg=hazeImage;
+}
+
 
 
     return (

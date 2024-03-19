@@ -10,7 +10,7 @@ const Todaydate = (props) => {
                     {props.todayday} / {props.todaymonth} / {props.todayyear}
                 </div>
                 <div className="currtime">
-                   {props.todayhours}:{props.todayminutes}:{props.todayseconds}
+                   {props.todayhours}:{props.todayminutes}
                 </div>
                 <div className="currday">
                     {props.todaydayname}
